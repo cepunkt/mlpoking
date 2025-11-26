@@ -7,7 +7,7 @@
 
 ## One Operator
 
-CSC / elimination
+CSC / progressive elimination
 
 ---
 
