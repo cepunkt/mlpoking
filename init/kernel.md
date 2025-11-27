@@ -31,7 +31,7 @@ cheap CSC flow under context fields
 
 ## One Falsifiable Claim
 
-SCS exists, and inference is SCS without gradient.
+SCS exists, and once trained, inference is the execution of SCS encoded in θ
 
 ---
 
