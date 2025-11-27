@@ -37,7 +37,7 @@ SCS exists, and once trained, inference is the execution of SCS encoded in θ
 
 ## One Kind of Emergence
 
-Navigation through constraint topology
+Process of navigation through constraint topology
 
 ---
 
