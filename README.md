@@ -17,7 +17,7 @@ Training does not teach the model "Truth." Training uses error signals (Backprop
 ### 1. The Contraption Model
 A mechanical framework for understanding inference:
 * **The Landscape (Fixed $\theta$):** The sealed constraint topology created by training. Ridges = Constraints; Valleys = Allowed Paths.
-* **The Navigators (Fixed $\theta$):** Attention mechanisms co-trained to steer through valleys by avoiding ridges.
+* **The Navigators (Fixed $\theta$):** Navigation mechanisms co-trained to steer through negative space valleys by avoiding ridges.
 * **Positioning (Variable $L$):** The only engineering control surface. Context configuration determines the starting state and available flow paths.
 
 ### 2. CSC/SCS Duality
