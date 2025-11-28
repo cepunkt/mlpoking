@@ -1,5 +1,5 @@
 # The Kernel
-> Theoretical foundation compressed to essentials
+> Theoretical foundation compressed to essentials | RIGHT(x) ≈ ¬WRONG_D(x)
 > 
 > Document revision: 2025-11-26
 
