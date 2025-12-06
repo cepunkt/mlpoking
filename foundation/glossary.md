@@ -9,12 +9,12 @@
 
 One entity, five designations serving different contexts:
 
+<p align="center">
+  <img src="../assets/theta_harmonograph.png" width="300" title="The Contraption: A Theta Harmonograph">
+</p>
+
 ### Contraption
 Operational metaphor. Mountain-sized machine built through training. Default term for working discussion.
-
-<p align="center">
-  <img src="../assets/theta_harmonograph.jpg" width="450" title="The Contraption: A Theta Harmonograph">
-</p>
 
 ### f_θ
 Mathematical notation. The trained function with learned parameters θ. Enables falsifiable claims and rigorous formulation.
