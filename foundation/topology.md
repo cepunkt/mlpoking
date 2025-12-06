@@ -29,6 +29,10 @@ Both created together. Both stored together. Inseparable in topology.
 
 Massive corpus. Billions of iterations. Foundation carving.
 
+<p align="center">
+  <img src="../assets/scs_carving_process.png" width="500" title="The Error Signal Carving the Manifold">
+</p>
+
 Every sequence in corpus exhibited CSC (Coherent Sequence Continuation). Training objective: predict next token. Continuations violating whatever coherence the sample exhibited received error signal.
 
 ```
