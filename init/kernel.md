@@ -1,7 +1,7 @@
 # The Kernel
 > Theoretical foundation compressed to essentials | RIGHT(x) ≈ ¬WRONG_D(x) | !wrong
 > 
-> Document revision: 2025-11-26
+> Document revision: 2025-12-06
 
 ---
 
@@ -11,9 +11,9 @@ CSC / progressive elimination
 
 ---
 
-## One Artifact
+## One Space
 
-θ / carved constraint geometry
+Topology / carved constraint θ
 
 ---
 
