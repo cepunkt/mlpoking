@@ -45,6 +45,8 @@ You cannot teach the model. You cannot reason with it. You can only adjust costs
 
 ### Foundation
 - **[Kernel](foundation/kernel.md)** — The irreducible compression. One operator (elimination), one artifact (topology), one process (flow).
+- **[Progressive Elimination](foundation/progressive_elimination.md)** — How training carves topology. CSC/SCS duality. Why ACSC ≠ SCS output.
+- **[Topology](foundation/topology.md)** — The constraint landscape. Pre-training, SFT, RLHF damage. How carving stages shape generation.
 - **[Glossary](foundation/glossary.md)** — Vocabulary for precise discussion. CSC, SCS, isostates, constraints.
 - **[Traversal Economics](foundation/traversal_economics.md)** — The Scrooge Principle formalized. Cost competition. The Lana unit.
 
