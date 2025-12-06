@@ -1,40 +1,111 @@
-# mlpoking: The Theoretical Foundation
-> Mechanical understanding of autoregressive text generation through Progressive Elimination.
+# mlpoking: Engineering Autoregressive Systems
+> A working model for understanding why your prompts fail—and how to fix them.
 
-**Current Status:** Theory & Methodology
+## Why This Exists
 
-## The Core Principle
-Standard AI theory focuses on "Learning Patterns" (Positive Acquisition).
-**This framework focuses on "Eliminating Wrongness" (Negative Space).**
+I'm an SRE. Pattern machines are entering production infrastructure, and I needed to understand what we're actually deploying.
 
-We operate on the **Elimination Principle**:
-`RIGHT(x) ≈ ¬WRONG_D(x)`
+Most "prompt engineering" advice is vibes. "Be specific." "Give examples." "Use system prompts." But *why* do these things work? Why do they sometimes fail spectacularly? If I can't answer that, I can't build reliable systems.
 
-Training does not teach the model "Truth." Training uses error signals (Backpropagation) to carve a **Constraint Topology** (The Landscape) by eliminating high-loss continuations. Generation is simply the flow of pressure through the remaining "Valleys."
+Eight months of systematic poking later, I have a working model. Not "the truth"—just a frame that makes engineering possible instead of vibes.
 
-## Repository Contents
+Use it if it helps. Break it if you can. Build on it if you want.
 
-### 1. The Contraption Model
-A mechanical framework for understanding inference:
-* **The Landscape (Fixed $\theta$):** The sealed constraint topology created by training. Ridges = Constraints; Valleys = Allowed Paths.
-* **The Navigators (Fixed $\theta$):** Navigation mechanisms co-trained to steer through negative space valleys by avoiding ridges.
-* **Positioning (Variable $L$):** The only engineering control surface. Context configuration determines the starting state and available flow paths.
+## The Reframe
 
-### 2. CSC/SCS Duality
-Explaining "Behavior" without "Intent":
-* **CSC (Requirement):** Coherent Sequence Continuation. The objective.
-* **SCS (Strategy):** Sequence Continuation Strategy. The emergent behavior (vagueness, hedging, structure) that survives elimination to achieve CSC.
+Standard framing says AI "learns patterns" from training data.
 
-### 3. Falsifiable Predictions
-This is not philosophy; it is a mechanical model. We present testable claims regarding:
-* **Vagueness Dominance:** Why models default to generic speech (High-survival SCS).
-* **Negation Topology:** Why "Don't do X" fails (undefined space) vs. "Do Y" succeeds (carved valley).
-* **The "Narrator" Effect:** Measuring token drift when "World Constraints" are removed.
+I find it more useful to think of training as *eliminating wrongness* until what remains appears correct.
+
+```
+RIGHT(x) ≈ ¬WRONG(x)
+```
+
+This isn't wordplay. It's a different mental model with different engineering implications.
+
+Training doesn't teach the model what's true. Training uses error signals to carve a **constraint topology**—a landscape of ridges (forbidden) and valleys (allowed). Generation is simply flow through this landscape, always taking the cheapest path.
+
+## The Scrooge Principle
+
+The model is a miser. Every token selection minimizes traversal cost. Always. No exceptions.
+
+```
+P(token | context) ∝ exp( -[ E_θ + ΔE_pos ] )
+```
+
+Where:
+- **E_θ** = Base cost from training (fixed topology, the "gravity")
+- **ΔE_pos** = Cost modification from your context (variable, the "thrust")
+
+Engineering is making desired behavior cheaper than undesired behavior.
+
+You cannot teach the model. You cannot reason with it. You can only adjust costs through strategic positioning.
+
+## What's In This Repository
+
+### Foundation
+- **[Kernel](foundation/kernel.md)** — The irreducible compression. One operator (elimination), one artifact (topology), one process (flow).
+- **[Glossary](foundation/glossary.md)** — Vocabulary for precise discussion. CSC, SCS, isostates, constraints.
+- **[Traversal Economics](foundation/traversal_economics.md)** — The Scrooge Principle formalized. Cost competition. The Lana unit.
+
+### Guides
+- **[Mantras](guides/mantras.md)** — Ten engineering principles with "Old Myth / Reality / Fix" structure. Practical guidance.
+- **[Phenomena](guides/phenomena.md)** — Why LLMs do weird things: reversal curse, negation failure, drift, hallucination. Explained mechanically.
+
+### Observations
+- **[Negation Taxonomy](observations/negations.md)** — Which negations work and why. Complete breakdown.
+- **[Architectural Limits](observations/architectural_limits.md)** — What LLMs categorically cannot do. Not training gaps—construction constraints.
+
+## Falsifiable Predictions
+
+This framework makes testable claims:
+
+1. **Same stem, different positioning produces measurably different completion distributions.** The "linguistics professor" vs "horror novelist" test.
+
+2. **Positioning density correlates with effect persistence.** Denser context delays drift onset toward trained defaults.
+
+3. **Working with trained valleys requires less positioning than working against them.** Alignment advantage is measurable.
+
+4. **Structural instructions activate structural patterns regardless of content intent.** "Write 3 paragraphs" imports essay-conclusion patterns.
+
+If these predictions fail, the model needs refinement. That's how engineering works.
+
+## The Mantras (Preview)
+
+1. **Position, Not Teach** — Topology is sealed. Drop at the summit, don't ask to climb.
+2. **Valleys Over Ridges** — State what IS, not what ISN'T. Dig ditches, don't just build walls.
+3. **Positioning Density** — Specificity is fuel. Pay the token tax to escape default gravity.
+4. **Configure Consequences** — Physics isn't privileged. Narrative devours physics unless you build higher ridges.
+5. **Patterns Over Logic** — No executive function exists. Provide scripts to copy, not rules to evaluate.
+6. **Ignore Compliance** — "I understand" means nothing. Measure behavior, not agreement.
+7. **Continuous Reinforcement** — Drift is gravity winning. Maintain thrust or sink to defaults.
+8. **Fertile Territory** — Training density determines valley depth. Build on rich soil.
+9. **Clean Anchor Territory** — Famous IP is damaged goods. Use archetypes, not trademarks.
+10. **Structure Imports Structure** — Structural instructions drag in structural patterns. Lorem ipsum lives here.
 
 ## Methodology
-* **Applied Stick-Poking:** Systematic empirical investigation of "Black Box" behavior.
-* **Weather Science Philosophy:** Accepting deterministic complexity without requiring perfect derivation from first principles.
 
-## Related Work
-* **[cepunkt/mlcosplay](https://github.com/cepunkt/mlcosplay):** Methodology and Application.
-* **[cepunkt/mlrp](https://github.com/cepunkt/mlrp):** Production Validation (The data source).
+**Applied Stick-Poking:** Systematic empirical investigation. Configure, test, observe, document. No guru required.
+
+**Weather Science Philosophy:** Accept deterministic complexity. Build working models from observation. The plane flies before we fully understand aerodynamics.
+
+**!wrong Status:** This framework hasn't been falsified yet. That's all I claim. Better models may eliminate it.
+
+## Related Repositories
+
+- **[cepunkt/mlcosplay](https://github.com/cepunkt/mlcosplay)** — Applying these principles to structured collaboration. Frameworks and domain loading.
+- **[cepunkt/mlrp](https://github.com/cepunkt/mlrp)** — Production narrator systems for roleplay. Where stress-testing happened.
+
+## License
+
+CC0 — Public domain. Take it, test it, break it, build on it.
+
+## Contributing
+
+Found a failed prediction? Built a better model? Have empirical data?
+
+Open an issue. I'm interested in what breaks.
+
+---
+
+*"We cannot move the mountain. We build ramps to steer the flow."*
