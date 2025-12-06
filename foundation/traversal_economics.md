@@ -39,6 +39,10 @@ Total energy determines flow. Lower total energy means higher probability of sel
 
 Base energy from trained topology. What elimination carved through billions of iterations.
 
+<p align="center">
+  <img src="../assets/theta_territory_map.png" width="600" title="Theta Territory: Visualizing Cost Landscapes">
+</p>
+
 High E_θ regions are ridges. Forbidden tokens. Incoherent continuations. What training eliminated as WRONG. Expensive to traverse.
 
 Low E_θ regions are valleys. Common phrases. Trained defaults. Helpful assistant patterns. What survived elimination. Cheap to traverse.
