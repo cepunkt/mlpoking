@@ -60,6 +60,10 @@ SCS is not CSC. SCS is the method that maintains CSC. The strategy that emerged 
 
 CSC and SCS form duality through elimination.
 
+<p align="center">
+  <img src="../assets/mechanism_of_continuity.png" width="600" title="The Duality of Requirement and Strategy">
+</p>
+
 ```
 CSC (requirement) → elimination → SCS (method)
 ```
