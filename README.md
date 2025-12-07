@@ -1,10 +1,6 @@
 # mlpoking: Engineering Autoregressive Systems
 > A working model for understanding why your prompts fail—and how to fix them.
 
-<p align="center">
-  <img src="assets/cover_gears.png" width="70%" title="The Mechanism of Pattern Matching">
-</p>
-
 ## Why This Exists
 
 I'm an SRE. Pattern machines are entering production infrastructure, and I needed to understand what we're actually deploying.
@@ -53,6 +49,7 @@ You cannot teach the model. You cannot reason with it. You can only adjust costs
 - **[Topology](foundation/topology.md)** — The constraint landscape. Pre-training, SFT, RLHF damage. How carving stages shape generation.
 - **[Glossary](foundation/glossary.md)** — Vocabulary for precise discussion. CSC, SCS, isostates, constraints.
 - **[Traversal Economics](foundation/traversal_economics.md)** — The Scrooge Principle formalized. Cost competition. The Lana unit.
+- **[Formal Math](foundation/formal/foundation_math.md)** — Complete mathematical formalization. Source equation, unit definitions, operational findings.
 
 ### Guides
 - **[Mantras](guides/mantras.md)** — Ten engineering principles with "Old Myth / Reality / Fix" structure. Practical guidance.
