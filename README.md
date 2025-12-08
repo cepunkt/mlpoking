@@ -1,5 +1,5 @@
 # mlpoking: Engineering Autoregressive Systems
-> A working model for understanding why your prompts fail—and how to fix them.
+> A working model for understanding why your prompts fail—and how to fix them. | !wrong
 
 <p align="center">
   <img src="assets/cover_gears.png" width="70%" title="The Mechanism of Pattern Matching">
