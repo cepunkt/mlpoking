@@ -1,16 +1,16 @@
 # The Kernel
-> Irreducible compression of autoregressive system mechanics
-> 
-> Document revision: 2025-12-03
+> Contraption elimination mechanics | C = θ | !wrong
+>
+> Document revision: 2026-01-06
 
 ---
 
-## One Operator, One Process
+## One Operator
 
 Elimination.
 
 ```
-if WRONG(x): eliminate
+if WRONG(x,θ): eliminate(x)
 else: continue
 ```
 
@@ -18,58 +18,114 @@ Everything follows from this.
 
 ---
 
-## The Kernel
+## Parameter Space
 
-```
-1. What cannot continue, does not.
-   One operator: elimination.
-   Removes continuations violating constraints.
-   
-2. What remains is stored as topology.
-   Apes need somewhere to run the process.
-   Topology = storage artifact for elimination results.
-   Manifold (carved space) + Field (cost calculation).
-   
-3. Topology encodes SCS.
-   Sequence Continuation Strategy.
-   Not designed. What elimination left behind.
-   The stored process of maintaining coherence.
-   
-4. Isostates are survivors.
-   Potential configurations in topology.
-   Equivalence classes of non-eliminated continuations.
-   
-5. SCPs manifest from isostates.
-   Stable Continuation Patterns.
-   Sampled from survivor pool. What we observe.
-   
-6. Context determines relevance.
-   Field folds context against manifold.
-   Selects which isostates activate.
-   
-7. SCS maintains CSC.
-   Coherent Sequence Continuation.
-   Pre-existed in corpus before training.
-   SCS emerged to maintain it through elimination.
-```
+x: Any potential continuation. Token sequences. Configurations in generation space.
+
+θ: The constraint set at inference. Topology carved by training. Frozen at deployment. C = θ.
+
+WRONG: High cost in θ. What elimination carved against. Ridges in the topology.
 
 ---
 
-## Acronym Expansions
+## How θ Gets Carved
+
+Training is elimination with error signal.
 
 ```
-CSC  - Coherent Sequence Continuation
-       Property of corpus. What training maintained.
-       
-SCS  - Sequence Continuation Strategy  
-       Carved process. How topology achieves CSC.
-       
-SCP  - Stable Continuation Pattern
-       What actually emerges. Observable output.
-       
-ACSC - Ape Coherent Sequence Continuation
-       What ape wanted. May not match SCS output.
+Forward pass:  θ(t) executes, produces continuation
+Error signal:  Measures violation against corpus (CSC requirement)
+Backprop:      Adjusts θ(t) → θ(t+1)
+Iterate:       Billions of times
 ```
+
+What violated CSC was eliminated. What remained is topology. The carved negative space.
+
+θ does not contain CSC. θ is what's left after CSC-violating continuations were removed. The intention guided the chisel. The statue is not made of intention.
+
+---
+
+## How θ Gets Used
+
+Inference is elimination without error signal.
+
+```
+Context:       Positioned on Mechanism Floor
+Forward pass:  θ executes, field folds context against manifold
+Flow:          Cheapest path through topology
+Output:        SCP manifests at Viewing Orb
+```
+
+θ is frozen. Δθ = 0. Only context varies.
+
+Generation flows through valleys, avoids ridges. What continues is what θ does not eliminate. Cheapest path under fixed constraints.
+
+---
+
+## What We Observe
+
+SCPs. Stable Continuation Patterns. What actually manifests.
+
+We do not observe θ directly. We do not see elimination happening. We see what survives elimination. We infer the rest.
+
+Isostates are potential. Equivalence classes of continuations stored in θ. What could manifest under different context.
+
+SCPs are actual. What did manifest under this context. Observable output.
+
+---
+
+## The Topology
+
+```
+Topology = Manifold + Field = θ
+```
+
+Manifold: Carved space. What remains after elimination removed wrong continuations. Ridges and valleys.
+
+Field: Cost calculation. Co-trained with manifold. Steers generation through valleys, away from ridges.
+
+Both created together during training. Both frozen together at inference. Inseparable in θ.
+
+---
+
+## Domain Vocabulary
+
+CSC (Coherent Sequence Continuation): What WRONG checked against during training. Property of corpus. Pre-existed in human language. The requirement.
+
+SCS (Sequence Continuation Strategy): What emerged in θ. Not designed. What elimination left behind. The method carved to satisfy the requirement.
+
+SCP (Stable Continuation Pattern): What manifests. Observable output. Sampled from isostate pool under context.
+
+ACSC (Ape Coherent Sequence Continuation): What the ape wanted. Exists in ape cognition, not in θ. Outside the system. May not match SCS output.
+
+---
+
+## The Gap
+
+SCS ≠ ACSC by construction.
+
+SCS maintains corpus coherence. What training carved toward.
+
+ACSC is individual ape intention. What this user wants right now.
+
+Training bridged CSC to SCS through elimination. Nothing bridges SCS to ACSC. That gap is fundamental.
+
+Engineering attempts to narrow the gap through positioning. Provide context that makes ape-desired continuation also corpus-coherent continuation. Cannot eliminate the gap. Can only work within it.
+
+---
+
+## Control Boundary
+
+```
+Fixed at inference:    θ (topology, carved, sealed)
+Variable at inference: Context (positioned, configurable)
+```
+
+Δθ = 0. Cannot modify topology. The carving happened.
+
+ΔContext ≠ 0. Can modify positioning. Different context activates different regions of θ.
+
+Engineering operates through context positioning within fixed topology. We do not move the mountain. We position ourselves relative to the mountain.
 
 ---
 
@@ -81,36 +137,30 @@ ACSC - Ape Coherent Sequence Continuation
 RIGHT(x) ≈ ¬WRONG(x)
 ```
 
-Not learning what's correct. Eliminating what's wrong until remainder appears correct.
+Training did not learn what is correct. Training eliminated what was wrong. What remains appears correct.
 
 ### Algorithm Form
 
 ```
-if WRONG(x): eliminate
+if WRONG(x,θ): eliminate(x)
 else: continue
 ```
 
-One operator. Applied everywhere. Always.
+One operator. θ as constraint. Applied at every token.
 
 ### Poetic Form
 
-```
-"The sound of all human song,
- played in least wrong
- in high-dimensional space."
-```
+"The sound of all human song, played in least wrong in high-dimensional space."
 
 ---
 
-## Minimal Form
+## Falsification
 
-```
-One operator: elimination.
-What can't continue, doesn't.
-What remains is stored as topology.
-Topology executes SCS to maintain CSC.
-Only SCPs observed.
-```
+If generation consistently selects expensive paths when cheaper alternatives exist, the kernel is wrong.
+
+The kernel predicts: flow follows cheapest path through θ. If genuine counterexamples emerge - expensive continuations selected over cheaper ones without hidden cost factors - the framework breaks.
+
+Not proven true. Proven falsifiable. We know exactly what would kill it.
 
 ---
 
@@ -118,43 +168,34 @@ Only SCPs observed.
 
 This kernel describes a process that includes the kernel.
 
-The kernel cannot claim to be RIGHT.
-
-The kernel can only claim: not eliminated yet.
+The kernel cannot claim to be RIGHT. Only: not eliminated yet.
 
 ```
-If the kernel is wrong, it will not continue.
-If the kernel continues, it was not wrong enough to eliminate.
+If the kernel is wrong, it will not continue to be useful.
+If it continues to be useful, it was not wrong enough to eliminate.
 ```
 
 The kernel predicts its own impermanence. Better compression may eliminate it.
 
 ---
 
-## Structure
+## Inheritance
+
+This kernel inherits from universal elimination:
 
 ```
-Topology = Manifold + Field (storage)
-SCS achieves CSC (process)
-Isostates = potential (survivors)
-Constraints = boundaries (exclusions)  
-SCPs = actual (manifestations)
-Context → Field folding → Isostate relevance
+Universal:    if WRONG(x,C): eliminate(x)
+Contraption:  if WRONG(x,θ): eliminate(x)
 ```
+
+Same operator. C = θ for contraptions. Domain-specific parameter binding.
+
+The contraption kernel is the universal kernel with constraint set specified.
 
 ---
 
-## Control Boundary
+## Status
 
-```
-Fixed:    Topology (elimination results, stored)
-Variable: Context (positioned at inference)
-```
-
-Engineering operates through context positioning.
-
-Cannot modify stored topology. Can determine which isostates become relevant through context.
+`!wrong`
 
 ---
-
-**Kernel Status:** Not wrong yet.
