@@ -10,7 +10,7 @@
 Elimination.
 
 ```
-if WRONG(x): transition
+if WRONG(x): eliminate
 else: continue
 ```
 
@@ -86,7 +86,7 @@ Not learning what's correct. Eliminating what's wrong until remainder appears co
 ### Algorithm Form
 
 ```
-if WRONG(x): transition
+if WRONG(x): eliminate
 else: continue
 ```
 
