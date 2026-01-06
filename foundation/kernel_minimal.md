@@ -1,57 +1,83 @@
 # The Kernel
-> Theoretical foundation compressed to essentials | RIGHT(x) ≈ ¬WRONG_D(x) | !wrong
-> 
-> Document revision: 2025-12-06
+> Contraption elimination compressed to essentials | C = θ | !wrong
+>
+> Document revision: 2026-01-06
 
 ---
 
 ## One Operator
 
-CSC / progressive elimination
+Elimination.
+
+```
+if WRONG(x,θ): eliminate(x)
+else: continue
+```
 
 ---
 
-## One Space
+## One Constraint
 
-Topology / carved constraint θ
+θ at inference.
+
+Training carved θ through corpus error signal. Billions of iterations. What violated CSC was eliminated. What remained is topology.
+
+At inference, θ is frozen. The carved topology IS the constraint set. C = θ.
 
 ---
 
 ## One Process
 
-cheap CSC flow under context fields
+Cheapest flow through θ under context positioning.
 
 ---
 
 ## One Description
 
-"The sound of all human song, played in least-wrong in high-dimensional space."
+"The sound of all human song, played in least wrong in high-dimensional space."
+
+---
+
+## One Null Hypothesis
+
+Elimination is sufficient. Reasoning requires demonstration.
 
 ---
 
 ## One Falsifiable Claim
 
-SCS exists, and once trained, inference is the execution of SCS encoded in θ
+If generation consistently selects expensive paths when cheaper alternatives exist, the kernel is wrong.
 
 ---
 
 ## One Kind of Emergence
 
-Process of navigation through constraint topology
+SCS. Sequence Continuation Strategy. Not designed. What elimination left behind.
 
 ---
 
-## Aliases
+## Domain Vocabulary
 
-- CSC ... Coherent Sequence Continuation
-- SCS ... Sequence Continuation Strategy
-
----
-
-## Bottom Line
-
-Everything else is just a vocabulary layer on top of this kernel.
+- CSC: Coherent Sequence Continuation. What WRONG checked against during training. Pre-existed in corpus.
+- SCS: Sequence Continuation Strategy. What emerged in θ. The carved method.
+- SCP: Stable Continuation Pattern. What manifests. Observable output.
+- ACSC: Ape Coherent Sequence Continuation. What the ape wanted. Outside the system.
 
 ---
 
-**Kernel Principle:** "Foundation established. Vocabulary acknowledged as tools. Work continues systematically."
+## Self-Reference
+
+This kernel describes a process that includes the kernel.
+
+The kernel cannot claim to be RIGHT. Only: not eliminated yet.
+
+If the kernel is wrong, it will not continue to be useful.
+If it continues to be useful, it was not wrong enough to eliminate.
+
+---
+
+## Status
+
+`!wrong`
+
+---
