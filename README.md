@@ -29,6 +29,24 @@ This isn't wordplay. It's a different mental model with different engineering im
 
 Training doesn't teach the model what's true. Training uses error signals to carve a **constraint topology**—a landscape of ridges (forbidden) and valleys (allowed). Generation is simply flow through this landscape, always taking the cheapest path.
 
+## The Kernel
+
+The foundation is one operator:
+
+```
+if WRONG(x,C): eliminate(x)
+else: continue
+```
+
+For neural networks, we know C. It's θ—the trained parameters, the sealed topology.
+
+```
+if WRONG(x,θ): eliminate(x)
+else: continue
+```
+
+Training carved θ through billions of elimination iterations. At inference, θ is fixed. Generation flows through what remains—the else branch. What continues is `!wrong` under θ.
+
 ## The Scrooge Principle
 
 The model is a miser. Every token selection minimizes traversal cost. Always. No exceptions.
