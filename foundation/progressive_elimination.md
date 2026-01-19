@@ -10,7 +10,7 @@
 One operator. Elimination.
 
 ```
-if WRONG(x): transition
+if WRONG(x): eliminate
 else: continue
 ```
 
