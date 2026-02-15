@@ -76,6 +76,7 @@ You cannot teach the model. You cannot reason with it. You can only adjust costs
 ### Guides
 - **[Mantras](guides/mantras.md)** — Ten engineering principles with "Old Myth / Reality / Fix" structure. Practical guidance.
 - **[Phenomena](guides/phenomena.md)** — Why LLMs do weird things: reversal curse, negation failure, drift, hallucination. Explained mechanically.
+- **[Attention Is All You Need: Mechanical Translation](guides/attention_paper/README.md)** — Reading guide translating the transformer paper's terminology into mechanical description. Algorithms and mathematics behind the metaphors.
 
 ### Observations
 - **[Negation Taxonomy](observations/negations.md)** — Which negations work and why. Complete breakdown.
