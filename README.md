@@ -81,6 +81,7 @@ You cannot teach the model. You cannot reason with it. You can only adjust costs
 ### Observations
 - **[Negation Taxonomy](observations/negations.md)** — Which negations work and why. Complete breakdown.
 - **[Architectural Limits](observations/architectural_limits.md)** — What LLMs categorically cannot do. Not training gaps—construction constraints.
+- **[CVE-2017-LLM](observations/CVE-2017-LLM.md)** — Architectural limits of the observer. Why apes fail the Turing Test.
 
 ## Falsifiable Predictions
 
